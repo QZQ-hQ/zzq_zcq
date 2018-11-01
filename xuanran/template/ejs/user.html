@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <% for(item in data =>% {%>
+
+        <a href="/index">
+            <h1>
+                <%data[item][title] %>
+            </h1>
+            <img src="<%=data[item][author][avatar_url] %>" alt="" srcset="">
+            <h3>
+                <%item.content %>
+            </h3>
+        </a>
+
+        <% }) %>
+</body>
+
+</html>
